@@ -1,0 +1,2 @@
+# IDataComponentDLL
+Data store component
