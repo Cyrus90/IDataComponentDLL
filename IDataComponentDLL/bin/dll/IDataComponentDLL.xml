@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IDataComponentDLL</name>
+    </assembly>
+    <members>
+        <member name="T:IDataComponentDLL.SStepInformation">
+            <summary>
+            步骤信息数组
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SStepInformation.stepID">
+            <summary>
+            步骤ID
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SStepInformation.stepDesc">
+            <summary>
+            步骤描述
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SStepInformation.stepStartTime">
+            <summary>
+            步骤开始时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SStepInformation.stepEndTime">
+            <summary>
+            步骤结束时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SItemInfomation.itemTime">
+            <summary>
+            评分时的时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SItemInfomation.itemEndTime">
+            <summary>
+            评分结束的时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SItemInfomation.itemNo">
+            <summary>
+            评分项编码
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SItemInfomation.score">
+            <summary>
+            此项评分项分值
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.command">
+            <summary>
+            协议接口名
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.operatorAccount">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.operatorSessionid">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.graderAccount">
+            <summary>
+            评分者
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.graderddSessionid">
+            <summary>
+            评分者Session
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.taskLogid">
+            <summary>
+            Task Log ID
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.startTime">
+            <summary>
+            操作开始时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.endTime">
+            <summary>
+            操作结束时间
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.applyid">
+            <summary>
+            预约id
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.deviceid">
+            <summary>
+            设备id
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.scoreSheetCode">
+            <summary>
+            评分表编码
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.audioFileid">
+            <summary>
+            音频文件ID
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.videoFileid">
+            <summary>
+            视频文件
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.stepInfoArray">
+            <summary>
+            步骤信息数组
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.SSubmitScore.scoreArray">
+            <summary>
+            评分项信息数值
+            </summary>
+        </member>
+        <member name="T:IDataComponentDLL.IDataComponent">
+            <summary>
+            数据组件
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.ReadIniData(System.String,System.String,System.String,System.String)">
+            <summary>
+            读取Ini文件
+            </summary>
+            <param name="Section">区域</param>
+            <param name="Key">键</param>
+            <param name="NoText"></param>
+            <param name="iniFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.WriteIniData(System.String,System.String,System.String,System.String)">
+            <summary>
+            写Ini文件值
+            </summary>
+            <param name="Section"></param>
+            <param name="Key"></param>
+            <param name="Value"></param>
+            <param name="iniFilePath"></param>
+            <returns></returns>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.standardScoreSheet">
+            <summary>
+            标准评分码，读取本地数据存储
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.submitScore">
+            <summary>
+            存储一次操作的评分数据
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.toURL">
+            <summary>
+            服务器地址
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.submitScoreErrCode">
+            <summary>
+            提交成绩的返回码
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.loginErrCode">
+            <summary>
+            登录返回码
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.pcLoginToken">
+            <summary>
+            pc智能产品获取的token
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.userId">
+            <summary>
+            登录时的用户ID
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.userName">
+            <summary>
+            账户中文名-web用
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.pcUserName">
+            <summary>
+            pc版中文名
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.loginAccount">
+            <summary>
+            用户登录（pc、web）时的账户
+            </summary>
+        </member>
+        <member name="F:IDataComponentDLL.IDataComponent.taskid">
+            <summary>
+            web的TaskID
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.GetInstance">
+            <summary>
+            创建单例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getSubmitScorePacket">
+            <summary>
+            组提交成绩包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getLoginPacket(System.String,System.String)">
+            <summary>
+            组登录包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.sendScorePacket(System.String)">
+            <summary>
+            发送成绩数据
+            </summary>
+            <param name="pOpenURL">默认为"",表示web版；否则为智能产品直接打开连接：例http:127.0.0.1:80</param>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.notifyHTMLSendDataEnd(System.String)">
+            <summary>
+            通知网页已发送数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.notifyHTMLSendDataFailed(System.String)">
+            <summary>
+            通知WEB发送数据失败
+            </summary>
+            <param name="desc"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getAccountNameFromHTML(System.String)">
+            <summary>
+            从WEb获取账户名
+            </summary>
+            <param name="pName"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getAccountChineseNameFromHTML(System.String)">
+            <summary>
+            从Web获取账户名对应的中文名
+            </summary>
+            <param name="pName"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getTaskLogIDFromHTML(System.String)">
+            <summary>
+            从WEB获取TaskID-不可调用
+            </summary>
+            <param name="pId"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addOperatorAccount(System.String)">
+            <summary>
+            增加用户账户--从web获取，不需要使用了
+            </summary>
+            <param name="pOperatorAccount"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addOperatorSessionid(System.String)">
+            <summary>
+            增加操作者sessionID--暂不用
+            </summary>
+            <param name="pOperatorSessionId"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addGraderAccount(System.String)">
+            <summary>
+            增加评分者账户--暂不用
+            </summary>
+            <param name="pGraderAccount"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addGraderSessionid(System.String)">
+            <summary>
+            增加评分账户session ID--暂不用
+            </summary>
+            <param name="pGraderSessionId"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addApplyId(System.String)">
+            <summary>
+            增加预约ID
+            </summary>
+            <param name="pApplyID"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addDeviceID(System.String)">
+            <summary>
+            增加设备ID
+            </summary>
+            <param name="pDeviceID"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addStartTime">
+            <summary>
+            增加开始操作时间
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addEndTime">
+            <summary>
+            增加结束操作时间--提交时自动添加
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addScoreSheetCode(System.String)">
+            <summary>
+            增加评分表编码--表示用的是哪套评分表
+            </summary>
+            <param name="pScoreSheetCode"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.addScoreItem(System.String,System.Single,System.Single,System.Boolean)">
+            <summary>
+            增加评分数据,注意，目前要求在程序一运行就调用开始录屏，结束时调用停止
+            </summary>
+            <param name="pCode"></param>
+            <param name="pScore"></param>
+            <param name="endDetailTime">评分开始后延迟几秒作为评分结束时间</param>
+            <param name="isWeb">此参数严格区分是否是在线系统还是智能系统</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.createStepInfo(System.String)">
+            <summary>
+            创建步骤信息--v1.0版本，建议使用createStepAndTime替换
+            </summary>
+            <param name="pStepDesc">当前步骤的描述</param>
+            <returns>返回创建的步骤信息ID</returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.createStepAndTime(System.String)">
+            <summary>
+            创建步骤信息,自动添加步骤开始时间--v1.1建议使用
+            </summary>
+            <param name="pStepDesc">当前步骤的描述</param>
+            <returns>返回创建的步骤信息ID</returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.setStepStartTime(System.Int32)">
+            <summary>
+            为创建的步骤添加开始时间
+            </summary>
+            <param name="pStepId">设置为您创建的步骤ID</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.setStepEndTime(System.Int32)">
+            <summary>
+            为创建的步骤添加结束时间
+            </summary>
+            <param name="pStepId">设置为您创建的步骤ID</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getScoreSheet">
+            <summary>
+            从本地或者服务器加载评分表简化版
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.resetScoreData">
+            <summary>
+            当开始新一轮计分时，复原成绩数据。
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.removeScoreItem(System.String)">
+            <summary>
+            从已经记录的评分数据里移除某项操作
+            </summary>
+            <param name="pCode"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.setURL(System.String)">
+            <summary>
+            设置推送数据的服务器地址
+            </summary>
+            <param name="pURL">例如：http://192.168.1.165:8086</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.isExistCode(System.String)">
+            <summary>
+            检测编码是否已经记录
+            </summary>
+            <param name="pCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.sendScoreData(System.String)">
+            <summary>
+            推送成绩数据--web和智能化产品
+            </summary>
+            <param name="pOpenURL">例：http://192.168.1.195；智能设备：如果此参数不为空，发送成功后将打开连接；WEb：参数为空</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.sendLoginData(System.String,System.String)">
+            <summary>
+            发送登录数据--智能化产品
+            </summary>
+            <param name="pAccoutName"></param>
+            <param name="pPassword"></param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.checkSendScoreDataIsSucceed">
+            <summary>
+            推送成绩后，可在Update里调用此接口检测是否发送成功。
+            </summary>
+            <returns>成功为true,失败为false</returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.checkLoginIsSucceed">
+            <summary>
+            发送登录请求后，可在update里检测是否登录成功。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getWebAccountChineseName">
+            <summary>
+            从web端获取训练者中文名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.getPcAccountChineseName">
+            <summary>
+            获取登录后的用户名-智能设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.notifyComponentPlatform(System.Boolean)">
+            <summary>
+            通知组件当前运行平台是web还是pc端智能产品（web端时会从web获取账户数据，pc端则不会）
+            </summary>
+            <param name="isWebPlatform">true,当前是web端;false,pc端智能产品</param>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.startRecordVideo">
+            <summary>
+            开始录制视频--智能化产品
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.finishRecordVideo">
+            <summary>
+            结束录制视频--智能化产品
+            </summary>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.printScreen(System.String)">
+            <summary>
+            截图-全屏--智能化产品,只能在录制视频的时候截图
+            </summary>
+            <param name="pCode">发生错误时截图，传入错误编码</param>
+            <returns>成功返回true</returns>
+        </member>
+        <member name="M:IDataComponentDLL.IDataComponent.notifyHTMLFinished">
+            <summary>
+            通知网页操作已结束,将提示训练已结束。
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
